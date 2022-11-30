@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>福州大学一码通</title>
-    <link rel="stylesheet" href="font_2849870_vfzdmtn3jgn/iconfont.css">
     <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="login.css">
-    <script src="flexible的副本.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins:wght@200;300;400;500&family=Varta:wght@400;600&display=swap');
+    </style>
 </head>
 <body>
     <div class="main"></div>
@@ -40,7 +40,7 @@
             s = s < 10 ? '0' + s : s;
             var t = document.querySelector('.time');
 
-            t.innerHTML = '2022-'+month + '-' + datas  + ' ' + h +':' + m + ':' + s + '&nbsp;&nbsp;' +'<span class="timer">('+timer+')</span>';
+            t.innerHTML = '2022-'+month + '-' + datas  + ' ' + h +':' + m + ':' + s + '&nbsp;&nbsp;&nbsp;' +'<span class="timer" style="font-weight: 600">('+timer+')</span>';
         }
         console.log('000')
         setInterval(setTime, 1000);
