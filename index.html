@@ -7,7 +7,7 @@
     <title>福州大学一码通</title>
     <link rel="stylesheet" href="normalize.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins:wght@200;300;400;500&family=Varta:wght@400;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins:wght@200;300;400;500&family=Varta:wght@400;500;600&display=swap');
     </style>
 </head>
 <body>
@@ -15,7 +15,7 @@
         <div class="bg">
             <img src="./img/bg1.png" alt="">
         </div>
-        <div class="time">dddd</div>
+        <div class="time"></div>
 
     </div>
     <div class="nav">
@@ -40,7 +40,7 @@
             s = s < 10 ? '0' + s : s;
             var t = document.querySelector('.time');
 
-            t.innerHTML = '2022-'+month + '-' + datas  + ' ' + h +':' + m + ':' + s + '&nbsp;&nbsp;&nbsp;' +'<span class="timer" style="font-weight: 600">('+timer+')</span>';
+            t.innerHTML = '2022-'+month + '-' + datas  + ' ' + h +':' + m + ':' + s + '&nbsp;&nbsp;' +'<span class="timer" style="font-weight: 600">('+timer+')</span>';
         }
         console.log('000')
         setInterval(setTime, 1000);
