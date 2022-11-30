@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>福州大学一码通</title>
+    <link rel="stylesheet" href="font_2849870_vfzdmtn3jgn/iconfont.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="login.css">
+    <script src="flexible的副本.js"></script>
+</head>
+<body>
+    <div class="main"></div>
+        <div class="bg">
+            <img src="./img/bg1.png" alt="">
+        </div>
+        <div class="time">dddd</div>
+
+    </div>
+    <div class="nav">
+        <img src="./img/nav.jpg" alt="">
+    </div>
+    <script>
+        //
+        //
+        var timer = 60;
+        function setTime() {
+            var date = new Date();
+            var month = date.getMonth();
+            month = month + 1;
+            month = month < 10 ? '0' + month : month;
+            var datas = date.getDate();
+            datas = datas < 10 ? '0' + datas : datas; 
+            var h = date.getHours();
+            h = h < 10 ? '0' + h :h;
+            var m = date.getMinutes();
+            m = m < 10 ? '0' + m :m
+            var s = date.getSeconds();
+            s = s < 10 ? '0' + s : s;
+            var t = document.querySelector('.time');
+
+            t.innerHTML = '2022-'+month + '-' + datas  + ' ' + h +':' + m + ':' + s + '&nbsp;&nbsp;' +'<span class="timer">('+timer+')</span>';
+        }
+        console.log('000')
+        setInterval(setTime, 1000);
+        setInterval(()=>timer--, 1000)
+
+    </script>
+</body>
+</html>
